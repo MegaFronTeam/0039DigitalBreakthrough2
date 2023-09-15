@@ -1,0 +1,64 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sImgBlock/_sImgBlock.pug
+include ../blocks/sLeaders/_sLeaders.pug
+include ../blocks/sPerson/_sPerson.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Leaders Of Digital'
+	title= title
+	
+	- let text=` a  <span> challenge </span> for real  <span> IT heroes </span>`
+
+	- let text2=` Is&nbsp;being implemented within the framework of&nbsp;the federal project &laquo;Artificial Intelligence&raquo; of&nbsp;the national program &laquo;Digital Economy of&nbsp;the Russian Federation&raquo;.`
+
+	- let text3=` Season: Artificial Intelligence`
+	- let list = [`The project is&nbsp;aimed at&nbsp;finding, developing and supporting talented specialists in&nbsp;creating products and services using artificial intelligence technologies.`, `Within the framework of&nbsp;the hackathons of&nbsp;the project, development specialists jointly solve the business problem and (or) social problem posed by&nbsp;the organizers in&nbsp;the field of&nbsp;artificial intelligence for a&nbsp;limited time.`, `According to&nbsp;the results of&nbsp;the competition, prize-winners and winners are determined.`]
+	- let numbers1 = {5: 'years',85: 'lectures','34 mln': 'million prize fund'}
+	- let numbers2 = {'7800+': 'participants',116: 'hackathons','8': 'district hackathons '}
+	-
+		let title3 = 'International hackaton'
+		let dataStart = '24'
+		let monStart = 'NOVEMBER'
+		let dataEnd = '26'
+		let monEnd = 'NOVEMBER'
+		let city = 'Moscow'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+headerBlock({
+			title,
+			text
+			})
+		//- +sCatalog
+		+sLeaders({
+			title,
+			text2,
+			text3,
+			list
+		})
+		+sPerson({numbers1, numbers2})
+		+sImgBlock({
+			title3,
+			dataStart,
+			monStart,
+			dataEnd,
+			monEnd,
+			city
+		})
+		+sForm()
+	+parts('footer')

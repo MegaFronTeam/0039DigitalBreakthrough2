@@ -1,0 +1,18 @@
+mixin sImgBlock(data)
+	// start sImgBlock
+	+b.SECTION.sImgBlock.section#sImgBlock&attributes(attributes)
+		.container
+			.fig
+			+e.inner.bg-wrap
+				+img("img/img-block.png",'bg').img-bg
+				h2= data.title3
+				+e.dates.row
+					+e.date-item.col-auto
+						+e.number= data.dataStart
+						.small= data.monStart
+					+e.date-item.col-auto
+						+e.number= data.dataEnd
+						.small= data.monEnd
+				+e.addr Moscow
+
+	// end sImgBlock

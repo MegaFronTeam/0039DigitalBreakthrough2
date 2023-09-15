@@ -1,0 +1,27 @@
+mixin sPerson(data)
+	// start sPerson
+	+b.sPerson.section#sPerson&attributes(attributes)
+		.fig
+		.container
+			mixin item(i)
+				+e.item
+					.row
+						.col-md-auto.col
+							+e.img-wrap
+								+img(`img/pers-${i}.jpg`).res-i
+						+e.numbers.col-auto
+							if block
+								block
+							else
+								each val, key in data.numbers1
+									+e.group
+										+e.number= key
+										+e.text= val
+			+item(1)
+			+item(2)
+				each val, key in data.numbers2
+					+e.group
+						+e.number= key
+						+e.text= val
+
+	// end sPerson

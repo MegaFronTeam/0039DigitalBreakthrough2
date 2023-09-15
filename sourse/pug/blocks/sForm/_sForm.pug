@@ -1,0 +1,22 @@
+mixin sForm()
+	// start sForm
+	+b.SECTION.sForm.section#sForm&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Fill out the questionnaire
+				+e.text and #[span register for the hackathon]
+			+form-wrap
+				+e.row.row
+					.col-lg-4
+						+input("Female",'',`Female <span>*</span>`)
+					.col-lg-4
+						+input("Name",'',`Name <span>*</span>`)
+					.col-lg-4
+						+input("Middle name")
+					.col-lg-6
+						+input("Phone number ",'tel',`Phone number <span>*</span>`)
+					.col-lg-6
+						+input("Contact in social networks",'url')
+				+e.btn.btn.btn-primary.w-100(type="submit") SAVE DATA
+				//- +policy
+	// end sForm

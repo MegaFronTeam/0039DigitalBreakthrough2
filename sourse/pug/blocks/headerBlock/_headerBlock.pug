@@ -1,0 +1,13 @@
+mixin headerBlock(data)
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		.fig
+		.container
+			h1
+				= data.title 
+				| 
+				| —
+			+e.text!= data.text
+			+e.videoBlock.bg-wrap 
+				video.picture-bg(src="https://lodmedia.hb.bizmrg.com/assets/video-bg-new.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" preload="metadata")  
+	// end headerBlock

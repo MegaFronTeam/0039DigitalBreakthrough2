@@ -1,0 +1,15 @@
+mixin sLeaders(data)
+	// start sLeaders
+	+b.SECTION.sLeaders.section#sLeaders&attributes(attributes)
+		.container
+			+b.section-title
+				.row
+					.col
+						h2= data.title
+						+e.text!= data.text3
+					.col-lg-auto
+						p!= data.text2 
+			ul
+				each item in data.list
+					li!= item
+	// end sLeaders

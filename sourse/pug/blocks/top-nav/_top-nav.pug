@@ -1,0 +1,60 @@
+mixin menu-toggle()
+	+b.toggle-menu-mobile--js
+		span
+		p Меню
+mixin mob-mnu()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.menu-mobile--js
+		+b.toggle-menu-mobile--js
+			span
+		//- +e.icon-link(href='#'): +icon('access')
+		+e.inner
+			+e.content
+				.row
+					.col
+						+mnu()
+					.col-auto
+						+e.lc-link(href='https://lk.hacks-ai.ru/')
+							+icon('user')
+							| Личный кабинет
+				+e.footer
+					+soc()
+					+e.link(href='https://lodmedia.hb.bizmrg.com/polozhenie.pdf' target="_blank") Положение об окружных хакатонах
+					+e.link(href='https://lodmedia.hb.bizmrg.com/approval.pdf' target="_blank") Политика в отношении обработки персональных данных
+	//  мобильное меню
+mixin top-nav(logo= 'img/svg/logo-3-forDark.svg') 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			+e.row.row(data-aos="fade-up" data-aos-duration="700")
+				+e.col-logo.col-auto
+					a(href="https://hacks-ai.ru/ ") 
+						+img('img/logo-text.png').main-logo
+						//- +logo1().main-logo
+				+e.col-logo.col-auto
+					a(href="https://www.economy.gov.ru/ " target="_blank") 
+						//- +img('img/svg/logo4.svg').logo-3
+						+logo2().logo-3
+				+e.col-logo.col-auto
+					a(href="https://rsv.ru/ " target="_blank") 
+						+img(logo).logo-2
+				//- .col-auto.p-0.order-lg-0.order-last
+				//- 	.menu-mobile.menu-mobile--js
+				//- 		.menu-mobile__inner
+				//- 			//- +menu-toggle()
+				//- 			+mnu()
+				//- .col-12.p-0.m-0.d-sm-none
+				.col-auto.ms-auto
+					+e.wrap
+						+menu-toggle()
+						//- +e.link.ms-auto.ms-md-0(href='https://lk.hacks-ai.ru/'): +icon('access')
+						//- +e.link(href='https://lk.hacks-ai.ru/'): +icon('user')
+	// end top-nav

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Leaders Of Digital</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/custom-bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<!-- start headerBlock-->
+				<div class="headerBlock section" id="headerBlock">
+					<div class="fig"></div>
+					<div class="container">
+						<h1>Leaders Of Digital 
+							—
+						</h1>
+						<div class="headerBlock__text"> a  <span> challenge </span> for real  <span> IT heroes </span>
+						</div>
+						<div class="headerBlock__videoBlock bg-wrap"> 
+							<video class="picture-bg" src="https://lodmedia.hb.bizmrg.com/assets/video-bg-new.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" preload="metadata"> </video>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock-->
+				<!-- start sLeaders-->
+				<section class="sLeaders section" id="sLeaders">
+					<div class="container">
+						<div class="section-title">
+							<div class="row">
+								<div class="col">
+									<h2>Leaders Of Digital</h2>
+									<div class="section-title__text"> Season: Artificial Intelligence
+									</div>
+								</div>
+								<div class="col-lg-auto">
+									<p> Is&nbsp;being implemented within the framework of&nbsp;the federal project &laquo;Artificial Intelligence&raquo; of&nbsp;the national program &laquo;Digital Economy of&nbsp;the Russian Federation&raquo;.</p>
+								</div>
+							</div>
+						</div>
+						<ul>
+							<li>The project is&nbsp;aimed at&nbsp;finding, developing and supporting talented specialists in&nbsp;creating products and services using artificial intelligence technologies.</li>
+							<li>Within the framework of&nbsp;the hackathons of&nbsp;the project, development specialists jointly solve the business problem and (or) social problem posed by&nbsp;the organizers in&nbsp;the field of&nbsp;artificial intelligence for a&nbsp;limited time.</li>
+							<li>According to&nbsp;the results of&nbsp;the competition, prize-winners and winners are determined.</li>
+						</ul>
+					</div>
+				</section>
+				<!-- end sLeaders-->
+				<!-- start sPerson-->
+				<div class="sPerson section" id="sPerson">
+					<div class="fig"></div>
+					<div class="container">
+							<div class="sPerson__item">
+								<div class="row">
+									<div class="col-md-auto col">
+										<div class="sPerson__img-wrap"><img class="res-i" src="img/pers-1.jpg" alt="" loading="lazy"/>
+										</div>
+									</div>
+									<div class="sPerson__numbers col-auto">
+										<div class="sPerson__group">
+											<div class="sPerson__number">5
+											</div>
+											<div class="sPerson__text">years
+											</div>
+										</div>
+										<div class="sPerson__group">
+											<div class="sPerson__number">85
+											</div>
+											<div class="sPerson__text">lectures
+											</div>
+										</div>
+										<div class="sPerson__group">
+											<div class="sPerson__number">34 mln
+											</div>
+											<div class="sPerson__text">million prize fund
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sPerson__item">
+								<div class="row">
+									<div class="col-md-auto col">
+										<div class="sPerson__img-wrap"><img class="res-i" src="img/pers-2.jpg" alt="" loading="lazy"/>
+										</div>
+									</div>
+									<div class="sPerson__numbers col-auto">
+										<div class="sPerson__group">
+											<div class="sPerson__number">8
+											</div>
+											<div class="sPerson__text">district hackathons 
+											</div>
+										</div>
+										<div class="sPerson__group">
+											<div class="sPerson__number">116
+											</div>
+											<div class="sPerson__text">hackathons
+											</div>
+										</div>
+										<div class="sPerson__group">
+											<div class="sPerson__number">7800+
+											</div>
+											<div class="sPerson__text">participants
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<!-- end sPerson-->
+				<!-- start sImgBlock-->
+				<section class="sImgBlock section" id="sImgBlock">
+					<div class="container">
+						<div class="fig"></div>
+						<div class="sImgBlock__inner bg-wrap"><img class="object-fit-js img-bg" src="img/img-block.png" alt="" loading="lazy"/>
+							<h2>International hackaton</h2>
+							<div class="sImgBlock__dates row">
+								<div class="sImgBlock__date-item col-auto">
+									<div class="sImgBlock__number">24
+									</div>
+									<div class="small">NOVEMBER</div>
+								</div>
+								<div class="sImgBlock__date-item col-auto">
+									<div class="sImgBlock__number">26
+									</div>
+									<div class="small">NOVEMBER</div>
+								</div>
+							</div>
+							<div class="sImgBlock__addr">Moscow
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sImgBlock-->
+				<!-- start sForm-->
+				<section class="sForm section" id="sForm">
+					<div class="container">
+						<div class="section-title">
+							<h2>Fill out the questionnaire</h2>
+							<div class="section-title__text">and <span>register for the hackathon</span>
+							</div>
+						</div>
+						<div class="form-wrap">
+							<form>
+								<div class="form-wrap__row row">
+									<div class="col-lg-4">
+										<div class="form-wrap__input-wrap form-group">
+											<label><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder="Female"/><span class="form-wrap__input-title">Female <span>*</span></span>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+									<div class="col-lg-4">
+										<div class="form-wrap__input-wrap form-group">
+											<label><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder="Name"/><span class="form-wrap__input-title">Name <span>*</span></span>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+									<div class="col-lg-4">
+										<div class="form-wrap__input-wrap form-group">
+											<label><input class="form-wrap__input form-control" inputmode="text" name="text" type="text" placeholder="Middle name"/><span class="form-wrap__input-title">Middle name</span>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><input class="form-wrap__input form-control" inputmode="tel" name="tel" type="tel" placeholder="Phone number "/><span class="form-wrap__input-title">Phone number <span>*</span></span>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+									<div class="col-lg-6">
+										<div class="form-wrap__input-wrap form-group">
+											<label><input class="form-wrap__input form-control" inputmode="url" name="url" type="url" placeholder="Contact in social networks"/><span class="form-wrap__input-title">Contact in social networks</span>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+								</div>
+								<button class="form-wrap__btn btn btn-primary w-100" type="submit">SAVE DATA
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<!-- end sForm-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
