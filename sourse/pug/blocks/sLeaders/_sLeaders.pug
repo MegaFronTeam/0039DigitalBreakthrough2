@@ -5,11 +5,11 @@ mixin sLeaders(data)
 			+b.section-title
 				.row
 					.col
-						h2= data.title
-						+e.text!= data.text3
-					.col-lg-auto
+						h2(data-aos="fade-up")= data.title
+						+e.text(data-aos="fade-up")!= data.text3
+					.col-lg-auto(data-aos="fade-up") 
 						p!= data.text2 
 			ul
 				each item in data.list
-					li!= item
+					li(data-aos="fade-up")!= item
 	// end sLeaders

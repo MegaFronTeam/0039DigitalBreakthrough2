@@ -10,7 +10,7 @@ mixin soc()
 		if block
 			block
 		else
-			each soc in social
-				+item-sos(soc)
+			each a, soc  in social
+				+item-sos(soc, a)
 
 //- /social buttons 

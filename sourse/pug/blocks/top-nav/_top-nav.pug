@@ -27,8 +27,8 @@ mixin mob-mnu()
 							| Личный кабинет
 				+e.footer
 					+soc()
-					+e.link(href='https://lodmedia.hb.bizmrg.com/polozhenie.pdf' target="_blank") Положение об окружных хакатонах
-					+e.link(href='https://lodmedia.hb.bizmrg.com/approval.pdf' target="_blank") Политика в отношении обработки персональных данных
+					+e.link(href='https://lodmedia.hb.bizmrg.com/polozhenie.pdf' target="_blank") Regulations on District Hackathons
+					+e.link(href='https://lodmedia.hb.bizmrg.com/approval.pdf' target="_blank") Privacy Policy
 	//  мобильное меню
 mixin top-nav(logo= 'img/svg/logo-3-forDark.svg') 
 	// start top-nav
@@ -53,8 +53,10 @@ mixin top-nav(logo= 'img/svg/logo-3-forDark.svg')
 				//- 			+mnu()
 				//- .col-12.p-0.m-0.d-sm-none
 				.col-auto.ms-auto
-					+e.wrap
-						+menu-toggle()
+					+soc()
+				//- .col-auto
+				//- 	+e.wrap
+				//- 		+menu-toggle()
 						//- +e.link.ms-auto.ms-md-0(href='https://lk.hacks-ai.ru/'): +icon('access')
 						//- +e.link(href='https://lk.hacks-ai.ru/'): +icon('user')
 	// end top-nav

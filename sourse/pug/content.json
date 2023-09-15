@@ -1,17 +1,16 @@
 {
-	"nav":[
-		{ "name":"Наши работы", "url":"#"},
-		{	"name":"Цены", "url":"#"},
-		{"name":"Калькулятор", "url":"#"},
-		{"name":"Акции", "url":"#"} ,
-		{
-			"name":"Заказать", 
-			"url":"#"
-			}
-	],
-	"social":[
-		"fb","instagram","telegram"
-	],
+	"nav": [
+    { "name": "Главная", "url": "/" },
+    { "name": "Новости", "url": "/#sNews" },
+    { "name": "Хакатоны", "url": "/#sHackathons" },
+    { "name": "Вопросы и ответы", "url": "/#sFaq" },
+    { "name": "Партнеры", "url": "/#sPartners" },
+    { "name": "Архив 2022", "url": "http://2022.hacks-ai.ru/", "target":"_blank" }
+  ],
+	"social":{
+		"vk": "https://vk.com/leadersofdigital",
+			"telegram":"https://t.me/hackathons_ai"
+	},
 	"index":{
 		"head": {
 			"title": "Главная"

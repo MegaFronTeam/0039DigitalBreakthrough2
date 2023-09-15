@@ -3,11 +3,11 @@ mixin headerBlock(data)
 	+b.headerBlock.section#headerBlock&attributes(attributes)
 		.fig
 		.container
-			h1
+			h1(data-aos="fade-up")
 				= data.title 
 				| 
 				| —
-			+e.text!= data.text
-			+e.videoBlock.bg-wrap 
+			+e.text(data-aos="fade-up")!= data.text
+			+e.videoBlock.bg-wrap(data-aos="fade-up") 
 				video.picture-bg(src="https://lodmedia.hb.bizmrg.com/assets/video-bg-new.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" preload="metadata")  
 	// end headerBlock

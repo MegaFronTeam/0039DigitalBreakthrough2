@@ -3,20 +3,20 @@ mixin sForm()
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Fill out the questionnaire
-				+e.text and #[span register for the hackathon]
+				h2(data-aos="fade-up")  Fill out the questionnaire
+				+e.text(data-aos="fade-up")  and #[span register for the hackathon]
 			+form-wrap()
 				+e.row.row
-					.col-lg-4
+					.col-lg-4(data-aos="fade-up") 
 						+input("Female",'',`Female <span>*</span>`)(required)
-					.col-lg-4
+					.col-lg-4(data-aos="fade-up") 
 						+input("Name",'',`Name <span>*</span>`)(required)
-					.col-lg-4
+					.col-lg-4(data-aos="fade-up") 
 						+input("Middle name")
-					.col-lg-6
+					.col-lg-6(data-aos="fade-up") 
 						+input("Phone number ",'tel',`Phone number <span>*</span>`)(required)
-					.col-lg-6
+					.col-lg-6(data-aos="fade-up") 
 						+input("Contact in social networks",'url')
-				+e.btn.btn.btn-primary.w-100(type="submit" onclick="(props) => saveFormData(props)") SAVE DATA
+				+e.btn.btn.btn-primary.w-100(type="submit" onclick="(props) => saveFormData(props)"  data-aos="fade-up")  SAVE DATA
 				//- +policy
 	// end sForm
