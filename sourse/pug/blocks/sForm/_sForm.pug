@@ -5,7 +5,7 @@ mixin sForm()
 			+b.section-title
 				h2 Fill out the questionnaire
 				+e.text and #[span register for the hackathon]
-			+form-wrap(onsubmit="saveFormData(props)")
+			+form-wrap()
 				+e.row.row
 					.col-lg-4
 						+input("Female",'',`Female <span>*</span>`)
@@ -17,6 +17,6 @@ mixin sForm()
 						+input("Phone number ",'tel',`Phone number <span>*</span>`)
 					.col-lg-6
 						+input("Contact in social networks",'url')
-				+e.btn.btn.btn-primary.w-100(type="submit") SAVE DATA
+				+e.btn.btn.btn-primary.w-100(type="button" onclick="saveFormData(props)") SAVE DATA
 				//- +policy
 	// end sForm
