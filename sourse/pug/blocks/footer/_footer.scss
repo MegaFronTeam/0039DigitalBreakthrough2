@@ -2,6 +2,9 @@
 	--sPT: #{rem(28)};
 	--sPB: #{rem(0)};
 	// --sTPB: #{rem()};
+	img{
+		margin-top: 1rem;
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);

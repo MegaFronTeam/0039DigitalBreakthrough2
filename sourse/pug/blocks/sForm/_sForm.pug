@@ -5,7 +5,7 @@ mixin sForm()
 			+b.section-title
 				h2 Fill out the questionnaire
 				+e.text and #[span register for the hackathon]
-			+form-wrap
+			+form-wrap(onsubmit="saveFormData(props)")
 				+e.row.row
 					.col-lg-4
 						+input("Female",'',`Female <span>*</span>`)

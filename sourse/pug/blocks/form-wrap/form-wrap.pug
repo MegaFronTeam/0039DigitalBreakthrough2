@@ -43,8 +43,8 @@ mixin select(label,pl,...items)
 
 //- wrapper for form
 mixin form-wrap(inp)
-	+b.form-wrap&attributes(attributes)
-		form
+	+b.form-wrap
+		form&attributes(attributes)
 			if inp
 				input(name='example-input-field', type='hidden')
 				input(class="order", name='order', type='hidden', value=`Заявка  с сайта`) 
