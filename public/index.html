@@ -169,14 +169,14 @@
 								<div class="form-wrap__row row">
 									<div class="col-lg-4">
 										<div class="form-wrap__input-wrap form-group">
-											<label><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder="Female"/><span class="form-wrap__input-title">Female <span>*</span></span>
+											<label><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder="Female" required="required"/><span class="form-wrap__input-title">Female <span>*</span></span>
 											</label>
 										</div>
 										<!-- +e.input-wrap-->
 									</div>
 									<div class="col-lg-4">
 										<div class="form-wrap__input-wrap form-group">
-											<label><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder="Name"/><span class="form-wrap__input-title">Name <span>*</span></span>
+											<label><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder="Name" required="required"/><span class="form-wrap__input-title">Name <span>*</span></span>
 											</label>
 										</div>
 										<!-- +e.input-wrap-->
@@ -190,7 +190,7 @@
 									</div>
 									<div class="col-lg-6">
 										<div class="form-wrap__input-wrap form-group">
-											<label><input class="form-wrap__input form-control" inputmode="tel" name="tel" type="tel" placeholder="Phone number "/><span class="form-wrap__input-title">Phone number <span>*</span></span>
+											<label><input class="form-wrap__input form-control" inputmode="tel" name="tel" type="tel" placeholder="Phone number " required="required"/><span class="form-wrap__input-title">Phone number <span>*</span></span>
 											</label>
 										</div>
 										<!-- +e.input-wrap-->
@@ -203,7 +203,7 @@
 										<!-- +e.input-wrap-->
 									</div>
 								</div>
-								<button class="form-wrap__btn btn btn-primary w-100" type="button" onclick="saveFormData(props)">SAVE DATA
+								<button class="form-wrap__btn btn btn-primary w-100" type="submit" onclick="(props) =&gt; saveFormData(props)">SAVE DATA
 								</button>
 							</form>
 						</div>
