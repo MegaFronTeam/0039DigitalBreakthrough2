@@ -65,6 +65,11 @@ function eventHandler() {
 
 	AOS.init();
 
+
+ 
+var wp_bvi = {"option":{"theme":"white","font":"arial","fontSize":16,"letterSpacing":"normal","lineHeight":"normal","images":true,"reload":false,"speech":true,"builtElements":true,"panelHide":false,"panelFixed":true,"lang":"ru-RU"}}; 
+
+var Bvi = new isvek.Bvi(wp_bvi.option);
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
