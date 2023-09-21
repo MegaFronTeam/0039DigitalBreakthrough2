@@ -175,6 +175,7 @@ class JSCCommon {
 		// form
 		$(document).on('submit', "form", function (e) {
 			e.preventDefault();
+			console.log(e)
 			const th = $(this);
 			var data = th.serialize();
 			saveFormData(data)
