@@ -33,9 +33,9 @@
 		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
-		@include roww(rem(40));
+		@include roww(#{rem(40)});
 		@include media-breakpoint-up(xl) {
-			--bs-gutter-x: rem(115px)
+			--bs-gutter-x: #{rem(115px)}
 		}
 	}
 	li{
