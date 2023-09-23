@@ -27,14 +27,14 @@
 		font-size: $input-btn-font-size;
 		color: #fff;
 		opacity: 0.3;
-		@include mt;
+		// @include mt;
 		span{
 			color: $pink;
 		}
 	}
 }
 
-.form-control:focus~.form-wrap__input-title, .form-control:not(:placeholder-shown)~.form-wrap__input-title, .form-select~.form-wrap__input-title {
+.form-control:not(:placeholder-shown)~.form-wrap__input-title, .form-select~.form-wrap__input-title {
 	opacity: 0;
 }
 //
