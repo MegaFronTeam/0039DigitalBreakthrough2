@@ -5,7 +5,7 @@ mixin sImgBlock(data)
 			.fig
 			+e.inner.bg-wrap
 				+img("img/img-block.png",'bg').img-bg(data-aos="fade-up") 
-				h2(data-aos="fade-up") = data.title3
+				h2(data-aos="fade-up")!= data.title3
 				+e.dates.row(data-aos="fade-up") 
 					+e.date-item.col-auto
 						+e.number= data.dataStart
