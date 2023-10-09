@@ -10,6 +10,7 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sImgBlock/_sImgBlock.pug
 include ../blocks/sLeaders/_sLeaders.pug
 include ../blocks/sPerson/_sPerson.pug
+include ../blocks/sPartners/_sPartners.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -24,11 +25,11 @@ block title
 	- let text2=`Conducted within the federal project &laquo;Artificial Intelligence&raquo; of&nbsp;the national program &laquo;Digital Economy of&nbsp;the Russian Federation&raquo;`
 
 	- let text3=` [Artificial Intelligence]`
-	- let list = [`The project aims to&nbsp;facilitate talented specialists using artificial intelligence technologies to&nbsp;create products and services.`, `During the hackathon, your team will jointly solve the business or&nbsp;social case using artificial intelligence in&nbsp;a&nbsp;limited time`, `The board of&nbsp;independent jury will assess every team, considering the metrics of&nbsp;AI solutions. The top 3&nbsp;teams of each case will be&nbsp;nominated for a&nbsp;prize.`]
-	- let numbers1 = {5: 'years',85: 'lectures','34 mln': 'million prize fund'}
-	- let numbers2 = {'7800+': 'participants',116: 'hackathons','8': 'district hackathons '}
+	- let list = [`The project aims to&nbsp;facilitate talented specialists using artificial intelligence technologies to&nbsp;create products and services.`, `During the hackathon, your team will jointly solve the business or&nbsp;social case using artificial intelligence in&nbsp;a&nbsp;limited time`, `The board of&nbsp;independent jury assess every team, considering the metrics of&nbsp;AI solutions. The top 3&nbsp;teams of each case will be&nbsp;nominated for a&nbsp;prize.`]
+	- let numbers1 = {'10': ' Tasks','40 hours ': 'of coding','300 ': 'teams','1500  ': 'participants'}
+	- let numbers2 = { '1st Place ': '  500 000 rubles', '2nd Place ': '  300 000 rubles','3nd Place ':' 200 000 rubles'}
 	-
-		let title3 = 'International hackaton'
+		let title3 = 'WORLDWIDE AI HACKATHON'
 		let dataStart = '24'
 		let monStart = 'NOVEMBER'
 		let dataEnd = '26'
@@ -61,4 +62,5 @@ block pagecontent
 			city
 		})
 		+sForm()
+		+sPartners
 	+parts('footer')

@@ -3,7 +3,11 @@
 	padding-top: rem(40);
 	padding-bottom: rem(40);
 	position: relative;
-	padding-top: rem(40);
+	@include media-breakpoint-up(sm) {
+
+		padding-top: rem(200);
+	}
+	padding-top: rem(150);
 	padding-bottom: rem(40);
 	// z-index: 2;
 	.fig,

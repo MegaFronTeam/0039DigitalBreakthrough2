@@ -7,8 +7,15 @@ mixin sLeaders(data)
 					.col
 						h2(data-aos="fade-up")= data.title
 						+e.text(data-aos="fade-up")!= data.text3
+						+e.text-sub(data-aos="fade-up")
+							strong enrol now 
+							| to the global  
+							span ai challenge
 					.col-lg-auto(data-aos="fade-up") 
-						p!= data.text2 
+						//- p!= data.text2 
+						a(href="http://leadersofdigital.ru/")
+							+img("img/qr.svg").res-i
+						br
 			ul
 				each item in data.list
 					li(data-aos="fade-up")!= item

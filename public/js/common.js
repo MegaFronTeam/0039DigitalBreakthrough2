@@ -72,6 +72,8 @@ function eventHandler() {
     fontSize: 24,
     theme: 'black'
 });
+
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

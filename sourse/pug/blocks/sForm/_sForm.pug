@@ -4,7 +4,12 @@ mixin sForm()
 		.container
 			+b.section-title
 				h2(data-aos="fade-up")  Fill out the questionnaire
-				+e.text(data-aos="fade-up")  and #[span register for the hackathon]
+				+e.text(data-aos="fade-up") 
+					| and #[span register for the hackathon]
+					br
+					br
+					|	deadline 
+					span 28.10.2023
 			+form-wrap()
 				+e.row.row
 					.col-lg-4(data-aos="fade-up") 

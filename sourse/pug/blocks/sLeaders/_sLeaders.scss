@@ -9,13 +9,30 @@
 		// --bs-gutter-y: #{rem()};
 	}
 	.section-title{
+		&__text-sub{
+
+			@include media-breakpoint-up(lg) {
+			@include rfs(45px);
+			}
+			font-weight: 500;
+			margin-bottom: 2rem;
+			line-height: 1.2;
+			span{
+				display: inline-block; 
+				border-radius: 8px;
+				border: 2px solid var(--Green, #03FE33);
+				padding: .000em .2em;
+				margin-left: .1em;
+				margin-right: .1em;
+			}
+		}
 		&__text{
 			color: $primary;
 			@include media-breakpoint-up(lg) {
 			@include rfs(48px);
 			}
 			font-weight: 500;
-			margin-bottom: 2rem;
+			margin-bottom: 1rem;
 		}
 		h2{
 			margin-bottom: 0;

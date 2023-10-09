@@ -89,16 +89,30 @@
 			}
 		}
 	}
+	&__group{
+		// &:not(:first-child){
+		// 	margin-top: 30%;
+
+		// }
+	}
 	&__numbers{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		// justify-content: flex-end;
 		font-weight: 600;
 		font-variant-numeric: lining-nums proportional-nums;
 	}
 	&__number{
+		text-wrap:balance;
+		max-width: rem(500);
 		@include rfs(80px);
 		line-height: 1;
+		&--title{
+			
+			@include rfs(70px);
+			margin-bottom: 1rem;
+		}
 	}
 	&__text{
 		@include media-breakpoint-up(sm) {

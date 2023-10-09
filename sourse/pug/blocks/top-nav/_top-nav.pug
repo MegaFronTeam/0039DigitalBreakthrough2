@@ -35,24 +35,26 @@ mixin top-nav(logo= 'img/svg/logo-3-forDark.svg')
 	+b.top-nav.block-with-lazy
 		.container
 			+e.row.row(data-aos="fade-up" data-aos-duration="700")
-				+e.col-logo.col-auto
+				+e.col-logo.col-auto.pe-0
 					a(href="https://hacks-ai.ru/ ") 
-						+img('img/logo-text.png').main-logo
+						+img('img/logo-text.svg').main-logo
 						//- +logo1().main-logo
-				+e.col-logo.col-auto
+				+e.col-logo.col-auto.pe-0
 					a(href="https://www.economy.gov.ru/ " target="_blank") 
-						//- +img('img/svg/logo4.svg').logo-3
-						+logo2().logo-3
-				+e.col-logo.col-auto
+						+img('img/logoblock_gerb.png').logo-3
+						//- +logo2().logo-3
+				+e.col-logo.col-auto.pe-0
 					a(href="https://rsv.ru/ " target="_blank") 
 						+img('img/rsv2.svg').logo-2
-				//- .col-auto.p-0.order-lg-0.order-last
+				.col-auto.p-0.order-lg-0.order-last.ms-auto
+					a.btn.btn-sm.btn-primary(href="#sForm") REGISTER
+				//- .col-auto.p-0.order-lg-0.order-last.ms-auto
 				//- 	.menu-mobile.menu-mobile--js
 				//- 		.menu-mobile__inner
 				//- 			//- +menu-toggle()
 				//- 			+mnu()
 				//- .col-12.p-0.m-0.d-sm-none
-				.col-auto.ms-auto
+				.col-auto
 					+soc()
 				//- .col-auto
 				//- 	a.my-class(href="#")
