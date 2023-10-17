@@ -29,8 +29,9 @@
 		// padding-right: rem(65);
 		margin-right: rem(20);
 		position: relative;
-		@include rfs(46px);
+		@include rfs(52px);
 		margin-bottom: .5em;
+		max-width: 100%;
 		a{
 			color: #fff;
 			&::after{
