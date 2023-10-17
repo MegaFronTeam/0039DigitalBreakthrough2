@@ -22,6 +22,6 @@ mixin sForm()
 						+input("Phone number ",'tel',`Phone number <span>*</span>`)(required)
 					.col-lg-6(data-aos="fade-up") 
 						+input("Contact in social networks",'url')
-				+e.btn.btn.btn-primary.w-100(type="submit" onclick="(props) => saveFormData(props)"  data-aos="fade-up")  SAVE DATA
+				+e.btn.btn.btn-primary.w-100(type="submit" onclick="(props) => saveFormData(props)" id="save_btn" data-aos="fade-up")  SAVE DATA
 				//- +policy
 	// end sForm
